@@ -15,9 +15,9 @@ gear_width = 8.0;
 gear_pressure_angle = 20.0;
 gear_helix_angle=35.0;
 
-motor_grub_screw_hole_diameter=1.0;
+motor_grub_screw_hole_diameter=3.1;
 motor_shaft_diameter=5.0;
-motor_shaft_extra_clearance_in_gear=0.2;
+motor_shaft_extra_clearance_in_gear=0.3;
 motor_shaft_clearance_diameter=10.0;
 motor_centre_circle_diameter=22.0;
 motor_centre_circle_depth=2.30;
