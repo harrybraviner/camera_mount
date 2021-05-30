@@ -13,7 +13,7 @@ plate_gear_clearance=3.0;
 gear_module = 2.0;
 gear_width = 8.0;
 gear_pressure_angle = 20.0;
-gear_helix_angle=10.0;
+gear_helix_angle=35.0;
 
 motor_grub_screw_hole_diameter=1.0;
 motor_shaft_diameter=5.0;
@@ -32,7 +32,7 @@ motor_shaft_length=22.00;
 
 idle_gear_shaft_baseplate_hole_diameter=5.0;
 idler_bolt_diameter=3.00;
-idler_extra_bolt_clearance_in_gear=0.10;
+idler_extra_bolt_clearance_in_gear=0.40;
 
 eps=0.001;
 
