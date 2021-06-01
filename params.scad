@@ -28,6 +28,8 @@ motor_locator_walls_thickness=3.00;
 motor_locator_walls_depth=3.00;
 motor_screw_pattern_side_length=35.0;
 motor_screw_holes_diameter=3.5;
+motor_screw_holes_cap_diameter=6.50;
+motor_screw_holes_cap_depth=2.60;
 motor_shaft_length=22.00;
 
 idle_gear_shaft_baseplate_hole_diameter=5.0;

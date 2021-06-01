@@ -32,6 +32,18 @@ module base_plate() {
                     cylinder(d=motor_screw_holes_diameter, h=base_plate_thickness + 2*eps);
             };
             
+            // Recesses for screw cap heads
+            translate([-gear_offsets, 0.0, base_plate_thickness - motor_screw_holes_cap_depth + eps]) {
+                translate([motor_screw_pattern_side_length/2, motor_screw_pattern_side_length/2])
+                    cylinder(d=motor_screw_holes_cap_diameter, h=motor_screw_holes_cap_diameter);
+                translate([motor_screw_pattern_side_length/2, -motor_screw_pattern_side_length/2])
+                    cylinder(d=motor_screw_holes_cap_diameter, h=motor_screw_holes_cap_diameter);
+                translate([-motor_screw_pattern_side_length/2, motor_screw_pattern_side_length/2])
+                    cylinder(d=motor_screw_holes_cap_diameter, h=motor_screw_holes_cap_diameter);
+                translate([-motor_screw_pattern_side_length/2, -motor_screw_pattern_side_length/2])
+                    cylinder(d=motor_screw_holes_cap_diameter, h=motor_screw_holes_cap_diameter);
+            };
+
             // Hole for idler shaft
             translate([+gear_offsets, 0.0, -eps])
                 cylinder(d=idler_bolt_diameter, h=base_plate_thickness + 2*eps);
