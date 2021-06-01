@@ -18,9 +18,15 @@ translate([-gear_offsets, 0.0, base_plate_thickness + plate_gear_clearance])
     color("blue")
     motor_gear();
     
-translate([+gear_offsets, 0.0, base_plate_thickness + plate_gear_clearance])
-    color("blue")
-    idler_gear();
+rotate([0.0, 0.0, +idler_offset_angle])
+    translate([+gear_offsets, 0.0, base_plate_thickness + plate_gear_clearance])
+        color("blue")
+        idler_gear();
+
+rotate([0.0, 0.0, -idler_offset_angle])
+    translate([+gear_offsets, 0.0, base_plate_thickness + plate_gear_clearance])
+        color("blue")
+        idler_gear();
     
 translate([-gear_offsets, 0.0, 0.0])
     color("green", alpha=0.5)

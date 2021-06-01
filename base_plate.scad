@@ -5,7 +5,7 @@ module base_plate() {
     
     difference() {
         linear_extrude(height=base_plate_thickness)
-            polygon(points=[[-11.75, -24.25], [-60.25, -24.25], [-60.25, +24.25], [-11.75, +24.25], [+45.0, +15.0], [+45.0, -15.0]]);
+            polygon(points=[[-11.75, -24.25], [-60.25, -24.25], [-60.25, +24.25], [-11.75, +24.25], [+38.0, +24.25], [+38.0, -24.25]]);
         
         union() {
             // Hole for screw
@@ -44,9 +44,13 @@ module base_plate() {
                     cylinder(d=motor_screw_holes_cap_diameter, h=motor_screw_holes_cap_diameter);
             };
 
-            // Hole for idler shaft
-            translate([+gear_offsets, 0.0, -eps])
-                cylinder(d=idler_bolt_diameter, h=base_plate_thickness + 2*eps);
+            // Holes for idler shafts
+            rotate([0.0, 0.0, +idler_offset_angle])
+                translate([+gear_offsets, 0.0, -eps])
+                    cylinder(d=idler_bolt_diameter, h=base_plate_thickness + 2*eps);
+            rotate([0.0, 0.0, -idler_offset_angle])
+                translate([+gear_offsets, 0.0, -eps])
+                    cylinder(d=idler_bolt_diameter, h=base_plate_thickness + 2*eps);
  
         };
         
