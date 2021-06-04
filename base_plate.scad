@@ -62,7 +62,7 @@ module base_plate() {
             cube([motor_linear_side_length + motor_locator_walls_side_clearance + 2*motor_locator_walls_thickness, motor_linear_side_length + motor_locator_walls_side_clearance + 2*motor_locator_walls_thickness, motor_locator_walls_depth + eps], center=true);
         
         translate([-gear_offsets, 0.0, -motor_locator_walls_depth/2 + eps/2])
-            cube([motor_linear_side_length, motor_linear_side_length, motor_locator_walls_depth + 3*eps], center=true);
+            cube([motor_linear_side_length + motor_locator_walls_side_clearance, motor_linear_side_length + motor_locator_walls_side_clearance, motor_locator_walls_depth + 3*eps], center=true);
     };
 }
 
