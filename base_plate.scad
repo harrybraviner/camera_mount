@@ -5,7 +5,7 @@ module base_plate() {
     
     difference() {
         linear_extrude(height=base_plate_thickness)
-            polygon(points=[[-11.75, -24.25], [-60.25, -24.25], [-60.25, +24.25], [-11.75, +24.25], [+38.0, +24.25], [+38.0, -24.25]]);
+            polygon(points=[[-61.5, -25.5], [-61.5, +25.5], [+38.0, +25.5], [+38.0, -25.5]]);
         
         union() {
             // Hole for screw
