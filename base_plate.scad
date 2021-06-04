@@ -47,10 +47,10 @@ module base_plate() {
             // Holes for idler shafts
             rotate([0.0, 0.0, +idler_offset_angle])
                 translate([+gear_offsets, 0.0, -eps])
-                    cylinder(d=idler_bolt_diameter, h=base_plate_thickness + 2*eps);
+                    cylinder(d=idler_gear_shaft_baseplate_hole_diameter, h=base_plate_thickness + 2*eps);
             rotate([0.0, 0.0, -idler_offset_angle])
                 translate([+gear_offsets, 0.0, -eps])
-                    cylinder(d=idler_bolt_diameter, h=base_plate_thickness + 2*eps);
+                    cylinder(d=idler_gear_shaft_baseplate_hole_diameter, h=base_plate_thickness + 2*eps);
  
         };
         

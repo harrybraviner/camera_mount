@@ -32,7 +32,7 @@ motor_screw_holes_cap_diameter=6.50;
 motor_screw_holes_cap_depth=2.60;
 motor_shaft_length=22.00;
 
-idle_gear_shaft_baseplate_hole_diameter=5.0;
+idler_gear_shaft_baseplate_hole_diameter=3.5;
 idler_bolt_diameter=3.00;
 idler_extra_bolt_clearance_in_gear=0.40;
 idler_offset_angle=30.00;
