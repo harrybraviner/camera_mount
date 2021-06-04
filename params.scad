@@ -40,5 +40,5 @@ idler_offset_angle=30.00;
 eps=0.001;
 
 // Computed
-gear_offsets=0.5*gear_module*(screw_gear_teeth + motor_gear_teeth);
+gear_offsets=1.02*0.5*gear_module*(screw_gear_teeth + motor_gear_teeth);
 
